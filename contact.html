@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Contact Us - Royal Hotel</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Royal Hotel</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav style="text-align: center; margin: 20px">
-      <a href="index.html" style="margin: 0 10px">Home</a>
-      <a href="about.html" style="margin: 0 10px">About</a>
-      <a href="contact.html" style="margin: 0 10px">Contact</a>
-    </nav>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo">Royal Hotel</h2>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h1>Contact Royal Hotel</h1>
-    <p>We’d love to hear from you!</p>
+    <section class="page-content">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Get in touch through the form below.</p>
 
-    <form style="display: inline-block; text-align: left">
-      <label>Name:</label><br />
-      <input type="text" placeholder="Your name" /><br /><br />
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
 
-      <label>Email:</label><br />
-      <input type="email" placeholder="Your email" /><br /><br />
-
-      <label>Message:</label><br />
-      <textarea placeholder="Your message" rows="4" cols="40"></textarea
-      ><br /><br />
-
-      <button type="submit">Send Message</button>
-    </form>
+    <footer>
+      <p>&copy; 2025 Royal Hotel. All rights reserved.</p>
+    </footer>
   </body>
 </html>
