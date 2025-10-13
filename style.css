@@ -114,3 +114,17 @@ footer {
   color: white;
   font-size: 0.9rem;
 }
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #0077cc;
+}
+
+.active {
+  color: #0077cc;
+  text-decoration: underline;
+}
